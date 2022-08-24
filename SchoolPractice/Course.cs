@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SchoolPractice
 {
-    internal class Course
+    public class Course
     {
-        //at least three field
-        //should be a list or Dictionary
-        //use of student class
-        private string subject;
-        private string teacher;
-        private int credit;
-        private Student newStudent;
-        private Dictionary<string, int> meetingRoom;
+        public string Topic { get; set; }
+        public Teacher Instructor { get; set; }
+        public List<Student> enrolledStudents { get; set; }
+
+
+        // TODO: Add your custom 'ToString' method here. Make sure it returns a well-formatted string rather than
+        //  just the class fields.
+
+
+        // TODO: Add your custom 'Equals' method here. Consider which fields should match in order to call two
+        //  Course objects equal.
     }
 }
